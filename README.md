@@ -1,57 +1,68 @@
-# MuseKit
+![MuseKit](assets/masthead.png)
 
-**The starter kit for Muse power users.**
+[![Release](https://img.shields.io/github/v/release/Dongdarealest/musekit)](https://github.com/Dongdarealest/musekit/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-141414.svg)](LICENSE)
+![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-141414.svg)
+![Skills: 3 starter](https://img.shields.io/badge/Skills-3%20starter-141414.svg)
 
-MuseKit is an unofficial community project. It is not made by Meta and it is not official documentation. It collects what a Muse user needs to start working with skills: a small importer, three starter skills, and a short guide to writing your own.
+**Muse can learn skills. Almost nobody knows, and there is no store.**
 
-## What Muse is
+Muse, Meta's personal AI agent, gets better at a kind of task the same way Claude does: you teach it a method once, in a folder of plain instructions, and every later conversation follows it. The format is undocumented from the outside, so most users never touch it. MuseKit is the on-ramp: an importer for the skills you already have, three starter skills written natively for Muse, and a short guide that teaches you the format well enough to write your own.
 
-Muse is Meta's personal AI agent. It lives in the messaging apps and surfaces you already use, remembers what matters to you, and can do real work on your behalf, from reading mail and calendars to running scheduled checks in the background. One of the ways it gets better at a kind of task is a skill: a folder of plain instructions that teaches it a method once, so every later conversation can follow it.
+From the same workshop: [SkillPort](https://github.com/Dongdarealest/skillport), skill packs that run on every AI, and [SkillDoctor](https://github.com/Dongdarealest/skilldoctor), a checkup for the skills your AI runs.
 
-## Why this kit
+## Thirty seconds
 
-Skills are the part of Muse most users never touch, because the format is not obvious from the outside. A Muse skill is not a single file with frontmatter, the way Claude skills are written. It is a folder holding an instructions file and a small metadata file beside it. MuseKit exists to make that format easy to adopt: convert the skills you already have, start from three that are written natively for Muse, and learn the rules well enough to write your own.
-
-## What is inside
-
-- `importer/`: one Python file that converts a Claude style skill into a Muse ready skill folder.
-- `starter-skills/`: three original skills written for Muse, ready to copy into your workspace.
-- `docs/writing-skills.md`: a short guide to the file layout, the metadata fields, and the rules that make a skill work.
-- `tests/`: a small test suite for the importer, runnable with plain Python.
-
-## Quick start
-
-### Import a skill you already have
+Already have a Claude skill? Convert it:
 
 ```bash
 python3 importer/musekit_import.py path/to/your-skill --output-dir ~/workspace/custom-skills
 ```
 
-Pass a folder holding a `SKILL.md`, or the path to a `SKILL.md` itself. The importer writes a converted folder into the output directory and prints everything it changed. Your own Muse skills live in the `custom-skills` folder of your Muse workspace, one folder per skill, so point the output there.
+Starting from zero? Copy any folder from `starter-skills/` into the `custom-skills` folder of your Muse workspace. It works as it stands. That is the whole install.
 
-### Install the starter skills
+![A real run of the importer](assets/demo.png)
 
-Copy any of the folders under `starter-skills/` into the `custom-skills` folder of your Muse workspace. Each folder is complete as it stands, with its `SKILL.md` and its `skill.yaml` beside it.
+## The one thing to understand
 
-### Write your own
+A Claude skill and a Muse skill look similar and are not the same file.
 
-Copy a starter skill, rename the folder, and edit both files. The folder name and the name in `skill.yaml` must match. Read `docs/writing-skills.md` first; it is short and it covers the mistakes that make a skill fail quietly.
+| | Claude | Muse |
+| --- | --- | --- |
+| Layout | One `SKILL.md` file | A folder with two files |
+| Metadata | YAML frontmatter inside `SKILL.md` | A separate `skill.yaml` beside it |
+| Name style | kebab-case, like `demo-skill` | snake_case, like `demo_skill` |
+| Instructions | `SKILL.md` with frontmatter | `SKILL.md` with no frontmatter at all |
+
+The importer bridges the two. It validates the name, converts it to the underscore form, moves the metadata into `skill.yaml`, drops fields Muse does not use and tells you which ones, copies any extra files the skill ships with, and refuses to overwrite an existing skill unless you pass `--force`. One Python file, zero dependencies, Python 3.10 or newer.
 
 ## Starter skills
 
+Three skills written for what Muse can do that a chat window cannot: remember you, keep a schedule, and reach you in your messaging apps.
+
 | Skill | What it does |
 | --- | --- |
-| `morning_brief` | Prepares a short morning briefing from your calendar, unread mail and scheduled tasks, shaped by your proactive preferences file. |
-| `memory_keeper` | Captures durable facts, preferences and decisions into your memory files, with dates and sources, and reconciles corrections. |
-| `watch_and_report` | Sets up a scheduled check on a topic you name, with clear rules for when to interrupt you and when to stay silent. |
+| `morning_brief` | A short morning briefing from your calendar, unread mail and scheduled tasks, shaped by your proactive preferences, and silent on mornings when nothing changed. |
+| `memory_keeper` | Captures durable facts, preferences and decisions into memory files, dated and sourced, and reconciles corrections so an old fact never quietly survives its replacement. |
+| `watch_and_report` | Sets up a scheduled check on a topic you name, with the cost agreed up front and clear rules for when to interrupt you and when to stay silent. |
 
-## The importer
+## Write your own
 
-Claude skills carry their name and description in YAML frontmatter at the top of `SKILL.md`. Muse skills carry no frontmatter at all: the instructions live in `SKILL.md`, and the name, title, description, category and prompt setting live in `skill.yaml`. The importer bridges the two. It validates the skill name, converts it to the underscore form Muse uses, moves the metadata into `skill.yaml`, copies any extra files the skill ships with, and refuses to overwrite an existing skill unless you pass `--force`. It is a single file with zero dependencies, and it runs on Python 3.10 or newer.
+Copy a starter skill, rename the folder, edit both files. The folder name and the name in `skill.yaml` must match. Read [docs/writing-skills.md](docs/writing-skills.md) first: it is short, and it covers the mistakes that make a skill fail quietly.
 
-```bash
-python3 importer/musekit_import.py --help
-```
+## What is inside
+
+- `importer/`: the converter, one Python file.
+- `starter-skills/`: three original Muse native skills, ready to copy.
+- `docs/writing-skills.md`: the format guide.
+- `tests/`: the importer test suite, runnable with plain Python.
+
+## Support
+
+MuseKit is free and MIT licensed. If it saves you time, you can support the workshop:
+
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-Support-141414?style=for-the-badge&logo=githubsponsors&logoColor=EA4AAA)](https://github.com/sponsors/Dongdarealest)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Buy%20a%20coffee-141414?style=for-the-badge&logo=kofi&logoColor=FF5E5B)](https://ko-fi.com/dongdarealest)
 
 ## Contributing
 
@@ -66,3 +77,5 @@ New starter skills should be original, safe to run, and useful to a stranger wit
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+MuseKit is an unofficial community project. It is not made by Meta and it is not official documentation.
