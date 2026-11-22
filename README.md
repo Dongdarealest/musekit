@@ -3,7 +3,7 @@
 [![Release](https://img.shields.io/github/v/release/Dongdarealest/musekit)](https://github.com/Dongdarealest/musekit/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-0064D1.svg)](LICENSE)
 ![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-0064D1.svg)
-![Skills: 3 starter](https://img.shields.io/badge/Skills-3%20starter-0064D1.svg)
+![Skills: 6 starter](https://img.shields.io/badge/Skills-6%20starter-0064D1.svg)
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Dongdarealest.musekit)
 
 **Your Muse can do more than chat. MuseKit teaches it how.**
@@ -66,9 +66,17 @@ category: "Work and knowledge"
 include_in_prompt: false
 ````
 
-## Two more skills, same trick
+## Five more skills, same trick
+
+Six skills, one ordinary day: a morning opened, messages sent well, money watched, a day closed, and a Muse that remembers and keeps an eye out in between.
 
 **A memory that survives the chat.** `memory_keeper` teaches your Muse to write down durable facts, preferences and decisions, with dates, and to replace an old fact when you correct it instead of letting both live on. [Install memory_keeper by chat](starter-skills/memory_keeper/PASTE.md).
+
+**The day, closed properly.** `day_close` wraps the day in under a minute: what got done, what is still open and where each open thing goes, and the one thing that matters most tomorrow. No guilt, no floating leftovers. [Install day_close by chat](starter-skills/day_close/PASTE.md).
+
+**Messages that land.** `say_it_better` turns a rough draft, or just a gist, into a message that does its job: your facts kept exact, the filler cut, a warm version and a direct version, and a flag on any sentence that could be misread. [Install say_it_better by chat](starter-skills/say_it_better/PASTE.md).
+
+**Money, once a week.** `spend_check` takes whatever you paste in, receipts, bank notifications, a list from memory, and returns your spending grouped and totalled, the one leak named, and one small change with the amount it would save. [Install spend_check by chat](starter-skills/spend_check/PASTE.md).
 
 **A watcher that stays quiet until it should not.** `watch_and_report` sets up a scheduled check on anything you name, a price, a page, a topic, with the cost agreed up front and clear rules: interrupt you only on a real change, stay silent otherwise. [Install watch_and_report by chat](starter-skills/watch_and_report/PASTE.md).
 
@@ -101,7 +109,7 @@ Copy a starter skill, rename the folder, edit both files. The folder name and th
 
 ## What is inside
 
-- `starter-skills/`: three original Muse native skills, each with a `PASTE.md` for install by chat.
+- `starter-skills/`: six original Muse native skills, each with a `PASTE.md` for install by chat.
 - `importer/`: the Claude to Muse converter, one Python file.
 - `docs/writing-skills.md`: the format guide.
 - `tests/`: the importer test suite, runnable with plain Python.

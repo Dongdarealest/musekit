@@ -1,0 +1,5 @@
+name: day_close
+title: "Day Close"
+description: "Close the day in under a minute: what got done, what is still open and where it goes, and the one thing that matters most tomorrow."
+category: "Work and knowledge"
+include_in_prompt: false

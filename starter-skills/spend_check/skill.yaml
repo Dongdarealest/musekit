@@ -1,0 +1,5 @@
+name: spend_check
+title: "Spend Check"
+description: "A weekly money review from whatever the user pastes in: spending grouped and totalled, one leak named, one small change suggested."
+category: "Money and life"
+include_in_prompt: false

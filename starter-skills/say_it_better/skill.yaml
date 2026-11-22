@@ -1,0 +1,5 @@
+name: say_it_better
+title: "Say It Better"
+description: "Turn a rough draft or a gist into a message that lands: facts kept exact, filler cut, one warm version and one direct version."
+category: "Communication"
+include_in_prompt: false

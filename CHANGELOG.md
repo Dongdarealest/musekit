@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0, 2026-11-22
+
+- Three new starter skills, each built around an everyday moment and each installable by chat like the rest: day_close (the day, wrapped up), say_it_better (messages that land), spend_check (a weekly money review from whatever you paste in).
+- The kit now covers one ordinary day end to end: morning brief, memory keeper, day close, say it better, spend check, watch and report.
+
 ## 0.2.0, 2026-11-22
 
 - Install by chat: every starter skill now ships a PASTE.md block. Copy it into a chat with your Muse and your Muse creates the skill itself. No downloads, no folders, no terminal.
