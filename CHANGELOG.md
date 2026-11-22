@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0, 2026-11-22
+
+- Install by chat: every starter skill now ships a PASTE.md block. Copy it into a chat with your Muse and your Muse creates the skill itself. No downloads, no folders, no terminal.
+- The README leads with a before and after demo: the same question to the same Muse, before and after it learns morning_brief.
+- The file based install and the Claude importer move below the chat install, as the secondary paths they are.
+
 ## 0.1.4, 2026-11-22
 
 - Added a visitor counter badge to the README: it goes up when someone opens the page.

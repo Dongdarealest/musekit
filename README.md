@@ -8,29 +8,73 @@
 
 **Your Muse can do more than chat. MuseKit teaches it how.**
 
-Muse is Meta's personal AI agent. It can learn new abilities, called skills: small folders of instructions you give it once, and it follows them in every chat after that. Almost nobody knows this exists, and there is no store to get skills from. MuseKit is the starting point: three ready-made skills you can install in a minute, a tool that converts skills you already have, and a short guide to writing your own.
+Muse is Meta's personal AI agent. It can learn new abilities, called skills: you teach it a method once, and it follows that method in every chat after. Almost nobody knows this exists, and there is no store. MuseKit is the starting point, and it installs the way Muse itself works: in a chat. No downloads, no folders, no terminal.
 
-## Start here: three skills, one minute, no tools
+![The same question, before and after one skill](assets/before-after.png)
 
-1. [Download the kit](https://github.com/Dongdarealest/musekit/releases/latest) and unzip it.
-2. Open the `starter-skills` folder and pick a skill.
-3. Copy that skill's folder into the `custom-skills` folder of your Muse workspace.
-4. Start a new chat with your Muse. The skill is live.
+## Try it now: copy, paste, done
 
-## What you get
+Copy the whole block below and paste it into a chat with your Muse. Your Muse creates the skill for itself and confirms when it is ready. From the next morning, ask "What does my day look like?" and get the second answer above.
 
-**A morning briefing that only speaks when something matters.** The `morning_brief` skill reads your calendar, unread mail and scheduled tasks, and gives you the short version. A sample:
+````text
+Install a skill for yourself, exactly as written here. Create a folder named morning_brief in my custom-skills folder, and inside it create exactly these two files with exactly these contents. Do not change anything. When both files are saved, tell me the skill is installed and what it will do for me.
 
-```
-Good morning. Two things need you today.
-- Dentist at 09:30, then you are free until 14:00.
-- One unread email from your landlord, about the contract.
-Nothing else changed overnight.
-```
+File 1, SKILL.md:
 
-**A memory that survives the chat.** The `memory_keeper` skill teaches your Muse to write down durable facts, preferences and decisions, with dates, and to replace an old fact when you correct it instead of letting both live on.
+# Morning Brief
 
-**A watcher that stays quiet until it should not.** The `watch_and_report` skill sets up a scheduled check on anything you name, a price, a page, a topic, with the cost agreed up front and clear rules: interrupt you only on a real change, stay silent otherwise.
+## Gather the raw material
+
+- Read today's events from the user's connected calendar, including start times, places, and anything that needs travel or preparation.
+
+- Search unread mail from the last day for messages that need a reply, carry a deadline, or change today's plan.
+
+- List the user's scheduled tasks and background jobs that ran overnight or fall due today, and note any that failed or are waiting on the user.
+
+## Shape the briefing
+
+- Look for a proactive preferences file in the user's workspace and follow it for length, topics, and what counts as worth interrupting the user with.
+
+- Lead with whatever is time sensitive, such as a deadline today, a meeting that moved, or a failed job the user was counting on.
+
+- Keep the whole briefing short enough to read in under a minute, and cut anything that is only background noise.
+
+- End with at most three suggested actions, each one a single sentence the user can accept or ignore.
+
+## Deliver it
+
+- Send the briefing once, in the chat or channel the user's preferences name for briefings.
+
+- Stay silent instead when nothing has changed and nothing needs the user, if their preferences say an empty briefing is worse than none.
+
+## Available connectors
+
+- [Google Calendar](/opt/hatch/connectors/google_calendar/CONNECTOR.md) for today's events and free or busy times.
+
+- [Gmail](/opt/hatch/connectors/gmail/CONNECTOR.md) for unread mail that needs attention.
+
+- Use `muse.connector_search` to find other connectors and `muse.skill_search` to find related skills.
+
+- If nothing here fits, look on the web for a maintained API or MCP server and set it up with [Custom Connectors and MCPs](/opt/muse/skills/custom-connector-setup/SKILL.md), or build a custom connector.
+
+File 2, skill.yaml:
+
+name: morning_brief
+title: "Morning Brief"
+description: "Prepare a short morning briefing from the user's calendar, unread mail and scheduled tasks, shaped by their proactive preferences."
+category: "Work and knowledge"
+include_in_prompt: false
+````
+
+## Two more skills, same trick
+
+**A memory that survives the chat.** `memory_keeper` teaches your Muse to write down durable facts, preferences and decisions, with dates, and to replace an old fact when you correct it instead of letting both live on. [Install memory_keeper by chat](starter-skills/memory_keeper/PASTE.md).
+
+**A watcher that stays quiet until it should not.** `watch_and_report` sets up a scheduled check on anything you name, a price, a page, a topic, with the cost agreed up front and clear rules: interrupt you only on a real change, stay silent otherwise. [Install watch_and_report by chat](starter-skills/watch_and_report/PASTE.md).
+
+## Prefer files?
+
+[Download the kit](https://github.com/Dongdarealest/musekit/releases/latest), open `starter-skills`, and copy any skill folder into the `custom-skills` folder of your Muse workspace. Each folder is complete as it stands, with its `SKILL.md` and its `skill.yaml` beside it, plus a `PASTE.md` holding its install by chat block.
 
 ## Already write Claude skills? Bring them with you
 
@@ -57,7 +101,7 @@ Copy a starter skill, rename the folder, edit both files. The folder name and th
 
 ## What is inside
 
-- `starter-skills/`: three original Muse native skills, ready to copy.
+- `starter-skills/`: three original Muse native skills, each with a `PASTE.md` for install by chat.
 - `importer/`: the Claude to Muse converter, one Python file.
 - `docs/writing-skills.md`: the format guide.
 - `tests/`: the importer test suite, runnable with plain Python.
