@@ -1,0 +1,5 @@
+name: watch_and_report
+title: "Watch and Report"
+description: "Set up a scheduled check on a topic the user names, with clear rules for when to interrupt the user and when to stay silent."
+category: "Work and knowledge"
+include_in_prompt: false

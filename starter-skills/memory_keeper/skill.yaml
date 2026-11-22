@@ -1,0 +1,5 @@
+name: memory_keeper
+title: "Memory Keeper"
+description: "Capture durable facts, preferences and decisions from a conversation into the user's memory files, with dates and sources, and reconcile corrections."
+category: "Work and knowledge"
+include_in_prompt: false

@@ -1,0 +1,5 @@
+name: morning_brief
+title: "Morning Brief"
+description: "Prepare a short morning briefing from the user's calendar, unread mail and scheduled tasks, shaped by their proactive preferences."
+category: "Work and knowledge"
+include_in_prompt: false
