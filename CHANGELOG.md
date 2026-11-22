@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2, 2026-11-22
+
+- New identity of its own: MuseKit now wears the Meta AI gradient ring on deep indigo with clean sans type, instead of the ink and gold workshop look shared with SkillPort and SkillDoctor.
+- Masthead, demo shot and social card rebuilt in the new identity; README badges and Support buttons recolored to match.
+
 ## 0.1.1, 2026-11-22
 
 - README rebuilt around a designed masthead, a real importer demo shot, and a thirty second quick start.

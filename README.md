@@ -1,9 +1,9 @@
 ![MuseKit](assets/masthead.png)
 
 [![Release](https://img.shields.io/github/v/release/Dongdarealest/musekit)](https://github.com/Dongdarealest/musekit/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-141414.svg)](LICENSE)
-![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-141414.svg)
-![Skills: 3 starter](https://img.shields.io/badge/Skills-3%20starter-141414.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-0064D1.svg)](LICENSE)
+![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-0064D1.svg)
+![Skills: 3 starter](https://img.shields.io/badge/Skills-3%20starter-0064D1.svg)
 
 **Muse can learn skills. Almost nobody knows, and there is no store.**
 
@@ -61,7 +61,7 @@ Copy a starter skill, rename the folder, edit both files. The folder name and th
 
 MuseKit is free and MIT licensed. If it saves you time, you can support the workshop:
 
-[![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-Support-141414?style=for-the-badge&logo=githubsponsors&logoColor=EA4AAA)](https://github.com/sponsors/Dongdarealest)
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-Support-0A0D26?style=for-the-badge&logo=githubsponsors&logoColor=EA4AAA)](https://github.com/sponsors/Dongdarealest)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Buy%20a%20coffee-141414?style=for-the-badge&logo=kofi&logoColor=FF5E5B)](https://ko-fi.com/dongdarealest)
 
 ## Contributing
