@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4, 2026-11-22
+
+- Added a visitor counter badge to the README: it goes up when someone opens the page.
+
 ## 0.1.3, 2026-11-22
 
 - README opening rebuilt around the reader, not the maker: what MuseKit does for you in one sentence, a one minute no tools install, and a sample of what each starter skill actually gives you. The importer moves below the starter skills, where it belongs.

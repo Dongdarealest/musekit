@@ -4,6 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-0064D1.svg)](LICENSE)
 ![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-0064D1.svg)
 ![Skills: 3 starter](https://img.shields.io/badge/Skills-3%20starter-0064D1.svg)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Dongdarealest.musekit)
 
 **Your Muse can do more than chat. MuseKit teaches it how.**
 
