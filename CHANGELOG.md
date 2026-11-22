@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3, 2026-11-22
+
+- README opening rebuilt around the reader, not the maker: what MuseKit does for you in one sentence, a one minute no tools install, and a sample of what each starter skill actually gives you. The importer moves below the starter skills, where it belongs.
+
 ## 0.1.2, 2026-11-22
 
 - New identity of its own: MuseKit now wears the Meta AI gradient ring on deep indigo with clean sans type, instead of the ink and gold workshop look shared with SkillPort and SkillDoctor.
