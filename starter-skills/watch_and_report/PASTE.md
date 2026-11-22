@@ -4,7 +4,7 @@ Copy everything in the block below and paste it into a chat with your Muse. Your
 
 ---
 
-Install a skill for yourself, exactly as written here. Create a folder named watch_and_report in my custom-skills folder, and inside it create exactly these two files with exactly these contents. Do not change anything. When both files are saved, tell me the skill is installed and what it will do for me.
+Install a skill for yourself, exactly as written here. Create a folder named watch_and_report in my custom-skills folder, and inside it create exactly these two files with exactly these contents. Do not change anything. When both files are saved, tell me the skill is installed, then run it once right now so I can see what it does, and finish by telling me the one sentence I should say when I want it again.
 
 File 1, SKILL.md:
 
@@ -31,6 +31,10 @@ File 1, SKILL.md:
 - Stop the watch and tell the user when the source disappears, the check keeps failing, or the topic is clearly settled.
 
 - Name how to pause or end the watch in one short line whenever you do report, so the user is never stuck with a watch they did not ask to keep.
+
+## Speak the user's language
+
+- Deliver everything this skill produces in the language the user speaks to you in, unless they ask for another.
 
 ## Available connectors
 

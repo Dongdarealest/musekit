@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.0, 2026-11-22
+
+- The morning brief now works before anything is connected: with no calendar or mail, it asks one question and builds the briefing from the answer, then offers to connect sources for tomorrow.
+- Every skill answers in the language the user speaks, and every install by chat block now ends with an immediate first run and the one sentence that brings the skill back.
+- The README states plainly what a paste block does, and the kit is audited by SkillDoctor: six of six skills pass, health score 100 out of 100.
+
 ## 0.3.0, 2026-11-22
 
 - Three new starter skills, each built around an everyday moment and each installable by chat like the rest: day_close (the day, wrapped up), say_it_better (messages that land), spend_check (a weekly money review from whatever you paste in).

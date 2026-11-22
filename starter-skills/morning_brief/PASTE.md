@@ -4,7 +4,7 @@ Copy everything in the block below and paste it into a chat with your Muse. Your
 
 ---
 
-Install a skill for yourself, exactly as written here. Create a folder named morning_brief in my custom-skills folder, and inside it create exactly these two files with exactly these contents. Do not change anything. When both files are saved, tell me the skill is installed and what it will do for me.
+Install a skill for yourself, exactly as written here. Create a folder named morning_brief in my custom-skills folder, and inside it create exactly these two files with exactly these contents. Do not change anything. When both files are saved, tell me the skill is installed, then run it once right now so I can see what it does, and finish by telling me the one sentence I should say when I want it again.
 
 File 1, SKILL.md:
 
@@ -28,11 +28,21 @@ File 1, SKILL.md:
 
 - End with at most three suggested actions, each one a single sentence the user can accept or ignore.
 
+## If nothing is connected yet
+
+- If no calendar and no mail are connected, do not deliver an empty briefing and do not stop at saying so. Ask the user one question: what is on today, and does anything carry a deadline?
+
+- Build the briefing from their answer, in the same shape as a connected one. Afterwards, offer once to connect calendar and mail so tomorrow runs itself.
+
 ## Deliver it
 
 - Send the briefing once, in the chat or channel the user's preferences name for briefings.
 
 - Stay silent instead when nothing has changed and nothing needs the user, if their preferences say an empty briefing is worse than none.
+
+## Speak the user's language
+
+- Deliver everything this skill produces in the language the user speaks to you in, unless they ask for another.
 
 ## Available connectors
 

@@ -28,6 +28,10 @@
 
 - Use the user's currency, and round the way they round.
 
+## Speak the user's language
+
+- Deliver everything this skill produces in the language the user speaks to you in, unless they ask for another.
+
 ## Available connectors
 
 - Use `muse.connector_search` to find connectors for the accounts this skill touches, and `muse.skill_search` to find related skills.

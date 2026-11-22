@@ -18,11 +18,21 @@
 
 - End with at most three suggested actions, each one a single sentence the user can accept or ignore.
 
+## If nothing is connected yet
+
+- If no calendar and no mail are connected, do not deliver an empty briefing and do not stop at saying so. Ask the user one question: what is on today, and does anything carry a deadline?
+
+- Build the briefing from their answer, in the same shape as a connected one. Afterwards, offer once to connect calendar and mail so tomorrow runs itself.
+
 ## Deliver it
 
 - Send the briefing once, in the chat or channel the user's preferences name for briefings.
 
 - Stay silent instead when nothing has changed and nothing needs the user, if their preferences say an empty briefing is worse than none.
+
+## Speak the user's language
+
+- Deliver everything this skill produces in the language the user speaks to you in, unless they ask for another.
 
 ## Available connectors
 

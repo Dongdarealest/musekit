@@ -4,7 +4,7 @@ Copy everything in the block below and paste it into a chat with your Muse. Your
 
 ---
 
-Install a skill for yourself, exactly as written here. Create a folder named spend_check in my custom-skills folder, and inside it create exactly these two files with exactly these contents. Do not change anything. When both files are saved, tell me the skill is installed and what it will do for me.
+Install a skill for yourself, exactly as written here. Create a folder named spend_check in my custom-skills folder, and inside it create exactly these two files with exactly these contents. Do not change anything. When both files are saved, tell me the skill is installed, then run it once right now so I can see what it does, and finish by telling me the one sentence I should say when I want it again.
 
 File 1, SKILL.md:
 
@@ -37,6 +37,10 @@ File 1, SKILL.md:
 - No judgment and no lectures. Numbers first, one suggestion, done.
 
 - Use the user's currency, and round the way they round.
+
+## Speak the user's language
+
+- Deliver everything this skill produces in the language the user speaks to you in, unless they ask for another.
 
 ## Available connectors
 

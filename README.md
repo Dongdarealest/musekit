@@ -14,7 +14,9 @@ Muse is Meta's personal AI agent. It can learn new abilities, called skills: you
 
 ## Try it now: copy, paste, done
 
-Copy the whole block below and paste it into a chat with your Muse. Your Muse creates the skill for itself and confirms when it is ready. From the next morning, ask "What does my day look like?" and get the second answer above.
+Copy the whole block below and paste it into a chat with your Muse. Your Muse creates the skill for itself, runs it once so you can see it work, and tells you the one sentence that brings it back. From the next morning, ask "What does my day look like?" and get the second answer above.
+
+Read the block before you paste it. It does exactly what it says: it creates two plain text files, the skill and its metadata, and nothing else. Every skill in this kit is audited by [SkillDoctor](https://github.com/Dongdarealest/skilldoctor), the open source skill checker: all six pass, health score 100 out of 100.
 
 ````text
 Install a skill for yourself, exactly as written here. Create a folder named morning_brief in my custom-skills folder, and inside it create exactly these two files with exactly these contents. Do not change anything. When both files are saved, tell me the skill is installed and what it will do for me.

@@ -22,6 +22,10 @@
 
 - Name how to pause or end the watch in one short line whenever you do report, so the user is never stuck with a watch they did not ask to keep.
 
+## Speak the user's language
+
+- Deliver everything this skill produces in the language the user speaks to you in, unless they ask for another.
+
 ## Available connectors
 
 - Use `muse.connector_search` to find other connectors and `muse.skill_search` to find related skills.

@@ -4,7 +4,7 @@ Copy everything in the block below and paste it into a chat with your Muse. Your
 
 ---
 
-Install a skill for yourself, exactly as written here. Create a folder named say_it_better in my custom-skills folder, and inside it create exactly these two files with exactly these contents. Do not change anything. When both files are saved, tell me the skill is installed and what it will do for me.
+Install a skill for yourself, exactly as written here. Create a folder named say_it_better in my custom-skills folder, and inside it create exactly these two files with exactly these contents. Do not change anything. When both files are saved, tell me the skill is installed, then run it once right now so I can see what it does, and finish by telling me the one sentence I should say when I want it again.
 
 File 1, SKILL.md:
 
