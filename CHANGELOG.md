@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.1, 2026-11-22
+
+- The kit now wears its audit result: a SkillDoctor plaque sits near the top of the README, and MuseKit is listed in the SkillDoctor registry, where a listing is verified by re-running the audit before it is added.
+
 ## 0.4.0, 2026-11-22
 
 - The morning brief now works before anything is connected: with no calendar or mail, it asks one question and builds the briefing from the answer, then offers to connect sources for tomorrow.

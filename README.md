@@ -10,6 +10,12 @@
 
 Muse is Meta's personal AI agent. It can learn new abilities, called skills: you teach it a method once, and it follows that method in every chat after. Almost nobody knows this exists, and there is no store. MuseKit is the starting point, and it installs the way Muse itself works: in a chat. No downloads, no folders, no terminal.
 
+<p align="center">
+  <a href="https://github.com/Dongdarealest/skilldoctor/blob/main/REGISTRY.md"><img src="assets/skilldoctor-plaque.svg" alt="SkillDoctor audited plaque: health 100 of 100, 6 skills, 0 failures, November 2026" width="560"></a>
+</p>
+
+MuseKit is listed in the SkillDoctor [registry](https://github.com/Dongdarealest/skilldoctor/blob/main/REGISTRY.md): all six starter skills pass the audit with 0 failures and a health score of 100 out of 100.
+
 ![The same question, before and after one skill](assets/before-after.png)
 
 ## Try it now: copy, paste, done
